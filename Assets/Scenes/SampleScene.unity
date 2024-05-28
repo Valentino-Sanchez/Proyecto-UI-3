@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 240784212}
   - component: {fileID: 240784211}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: Input_Password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,8 +218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000011444, y: 39.75}
-  m_SizeDelta: {x: 391.5, y: 79.5}
+  m_AnchoredPosition: {x: -0.000011444, y: 54}
+  m_SizeDelta: {x: 391.5, y: 67.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &240784211
 MonoBehaviour:
@@ -260,8 +260,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 240784212}
   m_TextComponent: {fileID: 1482997870}
   m_Placeholder: {fileID: 649290044}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -468,13 +468,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Ingrese us contrase\xF1a..."
+  m_Text: "Ingrese su contrase\xF1a..."
 --- !u!222 &649290045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -705,7 +705,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -756,7 +756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000076294, y: -16}
+  m_AnchoredPosition: {x: 0, y: -16}
   m_SizeDelta: {x: -335.2, y: -201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630915626
@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 1686294379}
   - component: {fileID: 1686294378}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Btn_Aceptar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,8 +832,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -61}
-  m_SizeDelta: {x: 204.7, y: 55.6}
+  m_AnchoredPosition: {x: -0.0000076294, y: -62}
+  m_SizeDelta: {x: 204.7, y: 66.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1686294378
 MonoBehaviour:
@@ -874,7 +874,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1686294379}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2135502293}
+        m_MethodName: "IngresoContrase\xF1a"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1686294379
@@ -1080,3 +1091,48 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2135502292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135502294}
+  - component: {fileID: 2135502293}
+  m_Layer: 0
+  m_Name: LOGINMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2135502293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135502292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd9dd1602f39dc4cbc56c5ada0f5f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "Contrase\xF1a": chab
+  "Ingresar_Contrase\xF1a": {fileID: 240784211}
+--- !u!4 &2135502294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135502292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 402.49997, y: 250.39844, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
